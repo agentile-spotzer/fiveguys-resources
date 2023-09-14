@@ -1,0 +1,42 @@
+{
+  "$id": "c_fAQCategory",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "FAQ Category",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "optionType": {
+      "option": [
+        {
+          "displayName": "ORDERING FIVE GUYS",
+          "textValue": "ORDERING_FIVE_GUYS"
+        },
+        {
+          "displayName": "ALLERGENS \u0026 DIETARY REQUIREMENTS",
+          "textValue": "ALLERGENS_\u0026_DIETARY_REQUIREMENTS"
+        },
+        {
+          "displayName": "COMPANY INFORMATION",
+          "textValue": "COMPANY_INFORMATION"
+        },
+        {
+          "displayName": "MENU \u0026 NUTRITION",
+          "textValue": "MENU_\u0026_NUTRITION"
+        },
+        {
+          "displayName": "RESTAURANTS",
+          "textValue": "RESTAURANTS"
+        },
+        {
+          "displayName": "GIFT CARDS \u0026 COUPONS",
+          "textValue": "GIFT_CARDS_\u0026_COUPONS"
+        },
+        {
+          "displayName": "FIVE GUYS MERCH",
+          "textValue": "FIVE_GUYS_MERCH"
+        }
+      ]
+    }
+  },
+  "typeId": "option"
+}
