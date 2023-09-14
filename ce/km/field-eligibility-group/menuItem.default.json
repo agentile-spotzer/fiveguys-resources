@@ -1,0 +1,16 @@
+{
+  "$id": "ce_menuItem.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Menu Item-default",
+  "entityType": "ce_menuItem",
+  "fields": [
+    "c_category",
+    "c_drinkSize",
+    "c_fAQCategory",
+    "c_foodToppings",
+    "c_menuCategory",
+    "c_milkshakeMixIns",
+    "description"
+  ],
+  "required": []
+}

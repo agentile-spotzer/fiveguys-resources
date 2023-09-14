@@ -1,0 +1,42 @@
+{
+  "$id": "c_drinkSize",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Drink Size and ABV",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "optionType": {
+      "option": [
+        {
+          "displayName": "500ml",
+          "textValue": "500ML_BOTTLE"
+        },
+        {
+          "displayName": "600ml",
+          "textValue": "600ML_BOTTLE"
+        },
+        {
+          "displayName": "330ml / 4.5%",
+          "textValue": "330ML_/_4.5%"
+        },
+        {
+          "displayName": "330ml / 5.2%",
+          "textValue": "330ML_/_5.2%"
+        },
+        {
+          "displayName": "N/A",
+          "textValue": "N/A"
+        },
+        {
+          "displayName": "Little, Regular, Large",
+          "textValue": "LITTLE,_REGULAR,_LARGE"
+        },
+        {
+          "displayName": "Unlimited",
+          "textValue": "UNLIMITED"
+        }
+      ]
+    }
+  },
+  "typeId": "option"
+}

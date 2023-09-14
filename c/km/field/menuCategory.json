@@ -1,0 +1,42 @@
+{
+  "$id": "c_menuCategory",
+  "$schema": "https://schema.yext.com/config/km/field/v1",
+  "displayName": "Menu Category",
+  "group": "NONE",
+  "localization": "PRIMARY_ONLY",
+  "type": {
+    "optionType": {
+      "option": [
+        {
+          "displayName": "BURGERS",
+          "textValue": "BURGERS"
+        },
+        {
+          "displayName": "BEEF DOGS",
+          "textValue": "BEEF_DOGS"
+        },
+        {
+          "displayName": "SANDWICHES",
+          "textValue": "SANDWICHES"
+        },
+        {
+          "displayName": "FRIES",
+          "textValue": "FRIES"
+        },
+        {
+          "displayName": "MILKSHAKES",
+          "textValue": "MILKSHAKES"
+        },
+        {
+          "displayName": "DRINKS",
+          "textValue": "DRINKS"
+        },
+        {
+          "displayName": "ALCOHOLIC DRINKS",
+          "textValue": "ALCOHOLIC_DRINKS"
+        }
+      ]
+    }
+  },
+  "typeId": "option"
+}

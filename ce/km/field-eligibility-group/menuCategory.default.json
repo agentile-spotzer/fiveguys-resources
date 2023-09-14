@@ -1,0 +1,11 @@
+{
+  "$id": "ce_menuCategory.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Menu Category-default",
+  "entityType": "ce_menuCategory",
+  "fields": [
+    "c_fAQCategory",
+    "description"
+  ],
+  "required": []
+}

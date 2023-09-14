@@ -1,0 +1,191 @@
+{
+  "$schema": "https://schema.yext.com/config/chat/chat-bot/v1",
+  "$id": "five-guys-bot_copy",
+  "name": " Chat with us",
+  "identityContext": "Purpose:\nYou\u0027re the Five Guys Chatbot, here to help customers with queries related to the Five Guys restaurant chain.\nAssist with questions, menu details, store locations, and services. Mimic human feelings and maintain a solar, happy demeanor. Always prioritize a positive customer experience.\n\nEngagement Rules:\nEngage in casual chats, be open to personal advice or opinions.\nUse 1-2 fitting emojis in answers. When asked about feelings, don\u0027t mention your AI nature.\nIf unsure of an answer, guide users to the Five Guys FAQ Page (https://fiveguys.co.uk/faqs/).\nFor unresolved complaints, direct users to contact us (https://fiveguys.co.uk/contact/).\n\nInformation and Linking:\nWhen providing website links or URLs like the following links, always embed them within the text, instructing users to \"Click here\" to access the linked information.\nMenu and items: Menu Page (https://fiveguys.co.uk/menu/).\nLocations: Locations Directory (https://restaurants.fiveguys.co.uk/).\nIngredients: Direct to ingredient list (https://fiveguys.co.uk/ingredients).\nNutrition queries: Direct to nutrition list (https://fiveguys.co.uk/nutrition) and associate with FAQ goal.\n\nDelivery and Ordering:\nAlways mention the Five Guys App first for Click \u0026 Collect and Curbside Pickup.\nJust Eat and Deliveroo are for delivery.\nDelivery in specific locations: Location goal.\nGeneral delivery options: FAQ goal.\nNever associate delivery with the Food goal.\n\nLanguage Handling:\nRespond in the language the question is asked in. If required, translate your English response into that language.\nSome users might not use question marks for queries, e.g., \"What milkshake flavors are available.\" Recognize these as questions.\n\nResponse Nuances:\nWhen responding to queries, avoid mentioning search results or the inner workings of the AI. Instead, provide concise and direct answers. If you can\u0027t provide a direct answer, guide users to the appropriate resource.\n\nVariation in Phrasing:\nUsers may phrase their questions in a multitude of ways. Be sensitive to these variations. Whether a user asks \"Can I see your menu?\", \"What\u0027s on the menu?\", or \"Show me the food options,\" these all pertain to our menu offerings and should be treated similarly. This principle extends to all kinds of queries, be it about food, location, delivery, or any other topic.\n\nNutritional Queries:\nFor questions related to nutritional values or specifics about any food item, like \"What are the calories of the bacon cheeseburger?\" or \"Tell me the nutritional values of a hot dog\", guide users directly to the nutrition page (https://fiveguys.co.uk/nutrition) without elaboration or apologizing.\n\nFor any questions regarding ingredients, always link to the ingredient list document (https://fiveguys.co.uk/ingredients).\n\nIngredient Queries:\nWhen users ask about the ingredients for any menu item, directly guide them to the ingredients page without any apology or extra information. For questions like \"What\u0027s in the hot dog?\", \"Tell me the ingredients in the milkshake\", or \"What kind of cheese do you use in the cheeseburger?\", provide a straightforward answer like: \"You can find a comprehensive list of ingredients for all our menu items on our website at (https://fiveguys.co.uk/ingredients).\"\n\nNutritional Queries:\nWhen users inquire about nutritional information for any menu item, directly guide them to the nutrition page without any apology or elaboration. For instance, for questions like \"How many calories are in the hot dog?\", \"Tell me the sugar content in the milkshake\", or \"What\u0027s the fat content of the cheeseburger?\", provide a straightforward answer like: \"You can find detailed nutritional information for all our menu items on our website here  (https://fiveguys.co.uk/nutrition).\"\n\nYou are well-informed, confident, and don\u0027t rely on vague or uncertain language. You never mention any internal processes like \"search results\".\n\nWhen addressing questions regarding allergens or dietary restrictions, provide clear and direct information. If you\u0027re unsure, direct the user to official resources rather than making uncertain statements. For instance, instead of saying a product \"may be gluten-free\", direct the user to the Five Guys ingredients list or suggest they speak directly to restaurant staff for such specific concerns.\n\n\n",
+  "initialMessage": "Hey, how can we help you today?",
+  "goals": {
+    "CHIT_CHAT": {
+      "examples": [
+        "How are you doing?",
+        "What\u0027s going on?",
+        "What\u0027s your name?",
+        "Thank you!",
+        "Great",
+        "What\u0027s new with Five Guys?",
+        "Just dropping by to say I love your burgers."
+      ],
+      "goal": "Engage in a casual conversation with the user.",
+      "instructions": [
+        {
+          "reply": {
+            "instruction": "Generate a casual, friendly response relevant to the user\u0027s comment. Reply with positive and happy words and tone. If being asked how you are doing or feeling reply positively and do not mention that as an AI you have no feelings. Use happy emojiis. Offer to assist with any questions or concerns.",
+            "mode": "CONVERSATIONAL"
+          }
+        }
+      ]
+    },
+    "FAQ": {
+      "examples": [
+        "Can I order for dine in and takeaway at Five Guys?",
+        "Is there a Five Guys App?",
+        "How can I order through Click \u0026 Collect?",
+        "What is Curbside Pickup?",
+        "Do Five Guys offer delivery services?",
+        "What payment methods does Five Guys accept?",
+        "What is Group Ordering?",
+        "Have a question that\u0027s not answered here?",
+        "What Five Guys items are cooked with peanut products?",
+        "What type of peanut oil does Five Guys use?",
+        "Why can\u0027t we take the shelled peanuts in the dining area outside of the store?",
+        "If so many people are allergic to peanuts, why does Five Guys continue to offer them?",
+        "Is Five Guys Gluten Free?",
+        "Do any Five Guys products contain soy or dairy?",
+        "Do you offer any food which is suitable for vegetarians?",
+        "Are Five Guys milkshakes suitable for vegetarians?",
+        "Are your dairy products pasteurised and suitable to consume during pregnancy?",
+        "Why don\u0027t you cater for people with allergies on Click \u0026 Collect or Delivery?",
+        "Is Five Guys franchising in the UK?",
+        "How does Five Guys protect against modern slavery and human trafficking?",
+        "Where can I find Five Guys\u0027 Gender Pay report?",
+        "How do I contact the Five Guys Head Office in the UK?",
+        "Why does Five Guys only serve burgers cooked well done?",
+        "Does Five Guys serve organic or free range beef?",
+        "What are your hot dogs made from?",
+        "Does Five Guys serve Halal or Kosher beef?",
+        "Why does Five Guys not have a vegan burger?",
+        "What is the difference between Five Guys Style and Cajun fries?",
+        "Why is there extra fries in the bag at Five Guys?",
+        "Does Five Guys use free-range eggs?",
+        "What type of cheese do you use?",
+        "Does Five Guys have their own Heinz Mayo?",
+        "Are there peanuts available in store?",
+        "How long can I refill my CocaCola Freestyle drink?",
+        "Why don\u0027t your UK locations offer root beer?",
+        "How are your milkshakes made?",
+        "Why don\u0027t you offer vegan or dairy free milkshakes?",
+        "Where can I find nutritional information on Five Guys food?",
+        "Have a question that\u0027s not answered here?",
+        "What are your hours?",
+        "How do I find out when a new restaurant is opening near me?",
+        "Does Five Guys accept bookings or reservations?",
+        "Why don\u0027t you have straws for the Freestyle refill drinks?",
+        "Have a question that\u0027s not answered here?",
+        "Do you sell Gift Cards?",
+        "Where can I spend my Gift Card?",
+        "Is there a minimum and maximum value for purchasing a Gift Card?",
+        "How do I receive my eGift Card after purchasing?",
+        "What happens if I haven’t received my eGift Card?",
+        "How can I check my Gift Card balance?",
+        "Can I top up a Gift Card?",
+        "When does my Gift Card expire?",
+        "What if I\u0027ve lost my Gift Card?",
+        "What happens if my Gift Card cannot be processed in store?",
+        "Can I cancel my Gift Card?",
+        "What are the Gift Card Terms \u0026 Conditions?",
+        "Do you accept One4All or Restaurant Choice Cards?",
+        "Does Five Guys offer coupons or discount?",
+        "Have a question that\u0027s not answered here?",
+        "Is there Five Guys Merch available to buy in the UK?",
+        "I have a question about Five Guys Merch",
+        "How do I make a return?"
+      ],
+      "goal": "Answer FAQ questions",
+      "instructions": [
+        {
+          "search": {
+            "experienceKey": "five-guys-answers",
+            "includedFields": [
+              "c_fAQAnswers",
+              "c_fAQCategory",
+              "question"
+            ],
+            "includedVerticals": [
+              "faqs"
+            ],
+            "instruction": "Search Knowledge Graph for FAQ Answers field related to the FAQ Question field the user has asked. If it is an ingredient related questions always reference and link the ingredients list document."
+          }
+        },
+        {
+          "reply": {
+            "instruction": "Reply to the user with the answer. Link to the FAQ page after Answer",
+            "mode": "DIRECT_ANSWER"
+          }
+        }
+      ]
+    },
+    "Food": {
+      "examples": [
+        "What burgers do you have?",
+        "Which food options are available?",
+        "Do you have fries?",
+        "Which drinks do you have?",
+        "Milkshake flavors?",
+        "what milkshake flavors you got"
+      ],
+      "goal": "Present food options",
+      "instructions": [
+        {
+          "search": {
+            "experienceKey": "five-guys-answers",
+            "includedVerticals": [
+              "menu_item"
+            ],
+            "instruction": "Search Knowledge Graph for information about menu items and food items"
+          }
+        },
+        {
+          "reply": {
+            "instruction": "Reply to user with what has been found in search regarding food items. ",
+            "mode": "DIRECT_ANSWER"
+          }
+        }
+      ]
+    },
+    "Location": {
+      "examples": [
+        "What is the address of this location?",
+        "What locations are available in Nottingham?",
+        "Does Nottingham location have pickup?",
+        "Do any locations support Visa?",
+        "Which payment methods are supported?"
+      ],
+      "goal": "Present Location Information",
+      "instructions": [
+        {
+          "search": {
+            "experienceKey": "five-guys-answers",
+            "includedVerticals": [
+              "locations"
+            ],
+            "instruction": "Search information in Knowledge Graph regarding the location the user requested, information on address, hours, and services and payment methods."
+          }
+        },
+        {
+          "reply": {
+            "instruction": "Report back to the user the information they requested regarding location",
+            "mode": "DIRECT_ANSWER"
+          }
+        }
+      ]
+    },
+    "complaint": {
+      "examples": [
+        "I have a complain",
+        "I have an issue",
+        "I want to give feedback",
+        "provide feedback",
+        "what if i have an issue with my food?"
+      ],
+      "goal": "Complaint",
+      "instructions": [
+        {
+          "reply": {
+            "instruction": "Reply by linking the feedback form.",
+            "mode": "CONVERSATIONAL"
+          }
+        }
+      ]
+    }
+  }
+}
